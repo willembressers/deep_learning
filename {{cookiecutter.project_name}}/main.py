@@ -8,23 +8,30 @@ import argparse
 
 # custom libraries
 
+
 def main() -> None:
-	logger = logging.getLogger(__name__)
-	logger.debug("a debug message")
-	logger.info("a info message")
-	logger.warning("a warning message")
+    """Does it al
+
+		
+    """
+    logger = logging.getLogger(__name__)
+    logger.debug("a debug message")
+    logger.info("a info message")
+    logger.warning("a warning message")
+
 
 if __name__ == '__main__':
-	# Initiate argument parser
-	parser = argparse.ArgumentParser(prog='face_recognition',)
-	parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
-	args = parser.parse_args()
-	
-	# Initiate the logger
-	logging.basicConfig(
-		filename = 'face_recognition.log', 
-		level = logging.DEBUG if args.verbose else logging.INFO, 
-		format = '%(asctime)s|%(name)s|%(levelname)s|%(message)s'
-	)
+    # Initiate argument parser
+    parser = argparse.ArgumentParser(prog='{{cookiecutter.project_name}}')
+    parser.add_argument("-v", "--verbose",
+                        help="increase output verbosity", action="store_true")
+    args = parser.parse_args()
 
-	main()
+    # Initiate the logger
+    logging.basicConfig(
+        filename='{{cookiecutter.project_name}}.log',
+        level=logging.DEBUG if args.verbose else logging.INFO,
+        format='%(asctime)s|%(name)s|%(levelname)s|%(message)s'
+    )
+
+    main()
