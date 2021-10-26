@@ -1,0 +1,32 @@
+# local package
+-e .
+
+# Base ------------------------------------------------------------------------
+# pandas
+# numpy
+# opencv-python
+# scikit-learn
+# requests
+# scipy
+
+# Deep learning ---------------------------------------------------------------
+# tensorflow
+# torch
+# torchvision
+# depthai
+
+# Logging ---------------------------------------------------------------------
+# tensorboard
+
+# Plotting --------------------------------------------------------------------
+# matplotlib
+# plotly
+
+# Export ----------------------------------------------------------------------
+# coremltools
+# onnx
+# onnx-simplifier
+
+# Extras ----------------------------------------------------------------------
+# albumentations
+# thop  # FLOPs computation
